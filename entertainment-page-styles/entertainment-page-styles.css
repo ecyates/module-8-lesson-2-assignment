@@ -1,0 +1,184 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.2;
+    color:indigo;
+    margin: 20px;
+    width: 75%;
+}
+
+h1 {
+    font-size: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 16px;
+    color: darkblue;
+    border: 1px solid #ccc;
+    background-color: #ddd;
+    padding: 10px;
+    width: 75%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.article-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: teal;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+ul li {
+    list-style-type: square;
+    margin: 10px;
+
+}
+
+.banner {
+    width: 100%;
+    position:static;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+iframe {
+    width: 300px;
+}
+
+.thumbnail {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+figure {
+    margin-bottom: 10px;
+}
+
+figure:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+
+figcaption {
+    font-size: 16px;
+    width: 300px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: blueviolet;
+    color: white;
+    transition:cubic-bezier(1, 0, 0, 1);
+    border-radius: 5px;
+    border: none;
+    padding: 8px 10px;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:purple;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button a:hover {
+    text-decoration: none;
+    color: white
+}
+
+figure a {
+    text-decoration: none;
+    color: indigo;
+}
+
+form {
+    width: 100%;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+fieldset {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.contact {
+    display: flex;
+    gap: 20px;    
+}
+
+.form-group {
+    display: flex; 
+    flex-direction: column;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px
+}
+
+input[type="text"], 
+textarea {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: #808080;
+    background-color: antiquewhite;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+input[type="text"]:focus, 
+textarea:focus {
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+    background-color: lavender;
+    
+}
+
+textarea {
+    width: 95%;
+
+}

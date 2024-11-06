@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author"content="Elizabeth Yates">
+        <title>Lists, Forms, and Tables Assignment</title>
+        <link rel="stylesheet" href="lists-forms-tables-styles.css">
+    </head>
+    <body>
+        <!--Task 2 - Styling the Navigation Bar-->
+        <header>
+            <nav class="navbar">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Event Registration</h1>
+
+            <!--Task 3 - Styling a Table-->
+            <h2>Event Agenda</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9AM-10AM</td>
+                        <td>Welcome and Introduction<br/>
+                        <div class="speaker">John Doe</div></td>
+                    </tr>
+                    <tr>
+                        <td>10AM-11AM</td>
+                        <td>Keynote Speech<br/>
+                        <div class="speaker">Jane Doe</div></td>                
+                    </tr>
+                    <tr>
+                        <td>11AM-12PM</td>
+                        <td>Closing Speech<br/>
+                        <div class="speaker">Claire Jones</div></td>                
+                    </tr>
+                    <tr>
+                        <td>12AM-1PM</td>
+                        <td>Lunch</td>                
+                    </tr>
+                </tbody>
+            </table>
+            <!--Task 1 - Styling a Form-->
+            <h2>Register Now</h2>
+            <form action="/submit"method="post">
+                <div class="form-row">
+                    <label for="username">Username: </label>
+                    <input type="text"id="username"name="username"placeholder="Enter your username" required>
+                </div>
+                <div class="form-row">
+                    <label for="password">Password: </label>
+                    <input type="text"id="password"name="password"placeholder="Enter your password" required>
+                </div>
+                <div class="form-row">
+                    <label for="full-name">Full Name: </label>
+                    <input type="name"id="full-name"name="full-name"placeholder="Enter your full name" required>
+                </div>
+                <div class="form-row">
+                    <label for="user-email">Email: </label>
+                    <input type="email"id="user-email"name="user-email"placeholder="Enter your email" required>
+                </div>
+                <div class="form-row">
+                    <label for="age">Age: </label>
+                    <input type="number"id="age"name="age"min="18"max="99"step="1"placeholder="Enter your age">
+                </div>
+
+                <!-- <div class="form-row">
+                    <div class="form-group">
+                        <label for="username">Username: </label>
+                        <label for="password">Password: </label>
+                        <label for="full-name">Full Name: </label>
+                        <label for="user-email">Email: </label>
+                        <label for="age">Age: </label>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="text"id="username"name="username"placeholder="Enter your username" required>
+                        <input type="text"id="password"name="password"placeholder="Enter your password" required>
+                        <input type="name"id="full-name"name="full-name"placeholder="Enter your full name" required>
+                        <input type="email"id="user-email"name="user-email"placeholder="Enter your email" required>
+                        <input type="number"id="age"name="age"min="18"max="99"step="1"placeholder="Enter your age">
+                    </div>
+                </div> -->
+
+                <label>Gender: </label>
+                <div class="gender">
+                    <input type="radio"id="male"name="gender"value="male">
+                    <label for="male">Male</label>
+                    <input type="radio"id="female"name="gender"value="female">
+                    <label for="female">Female</label>
+                </div>
+                <label for="comments">Comments: </label>
+                <textarea id="comments"name="comments"rows="4"cols="50"placeholder="Enter your comments here."></textarea>
+                
+                <div class="check">
+                    <input type="checkbox"id="subscribe"name="subscribe"value="yes">
+                    <label for="subscribe">Check to Subscribe </label>
+                </div>
+    
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+    </body>
+</html>
